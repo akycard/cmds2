@@ -2,7 +2,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 local plr = game.Players.LocalPlayer
 Character = game.Players.LocalPlayer
 game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Visible = true
-game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "creado por giyu#9000 HELPER TSFxTrxz#9999"
+game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "creado por te#3185 HELPER TSFxTrxz#9999"
  
     function invis2()
  
@@ -1136,4 +1136,56 @@ player.Chatted:connect(function(cht)
         wait(1)
 teleport9()
 space() 
+end end)
+function redspam()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "red spam",
+    Text = "Press K For spam"
+}
+)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "red spam",
+    Text = "IN BETA!!"
+}
+)
+
+pcall(function()
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "k" then
+old = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame -- stores cframe
+local args = {
+    [1] = true
+}
+
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits:WaitForChild("EatSenzu"):FireServer(unpack(args))
+
+local args = {
+[1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")
+}
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
+wait(0.3)
+local A_1 = {
+ [1] = "Yes"
+       }
+  game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(A_1)
+  task.wait(0.8)
+  local args = {
+  [1] = "woah"
+  }
+  game:GetService("Players").LocalPlayer.Backpack.HairScript.RemoteEvent:FireServer(unpack(args))
+
+game.Players.LocalPlayer.CharacterAdded:Wait() -- yields until character s added
+while not game.Players.LocalPlayer.Character:FindFirstChild("Prestige") and task.wait() do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = old
+end
+end
+end)
+end)
+end
+
+local player = game.Players.LocalPlayer
+player.Chatted:Connect(function(cht)
+if cht:match('-redspam') then
+redspam()
+redspam2()
 end end)
