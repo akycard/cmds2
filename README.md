@@ -1187,5 +1187,4 @@ local player = game.Players.LocalPlayer
 player.Chatted:Connect(function(cht)
 if cht:match('-redspam') then
 redspam()
-redspam2()
 end end)
