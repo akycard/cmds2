@@ -1,10 +1,8 @@
 local mouse = game.Players.LocalPlayer:GetMouse()
 local plr = game.Players.LocalPlayer
 Character = game.Players.LocalPlayer
-game:GetService("RunService").Heartbeat:Connect(function()
 game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Visible = true
 game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "creado por te#3185 HELPER TSFxTrxz#9999"
- end)
     function invis2()
  
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Flash Strike"])
