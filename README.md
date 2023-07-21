@@ -2,7 +2,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 local plr = game.Players.LocalPlayer
 Character = game.Players.LocalPlayer
 game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Visible = true
-game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "creado por giyu#9000 HELPER TSFxTrxz#9999"
+game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "creado por giyu#9000 HELPER TSFxTrxz#9999!!"
  
     function invis2()
  
