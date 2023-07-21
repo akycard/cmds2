@@ -178,6 +178,7 @@ print("-heaven teleport al heaven")
 print("-queue teleport al queue")
 print("-top teleport al top")
 print("-automelee auto move spam")
+print("-redspam or -red For Red Spam")
 end
 local player = game.Players.LocalPlayer
 player.Chatted:connect(function(cht)
